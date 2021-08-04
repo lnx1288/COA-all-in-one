@@ -7,7 +7,16 @@ and role information for the cloud environment.
 Keystone supports multiple forms of authentication, including login name and
 password, token-based credentials, and REST API logins. 
 
-Let’s define some terms which Keystone operates with:
+__IMPORTANT NOTE__: 
+
+  The Keystone operational scope is limited to the Openstack services, users, 
+  projects, etc. This means that, for example, if you create a new user that 
+  needs permissions to launch VMs in a given Openstack project, Keystone will 
+  be in charge of the authentication steps for this user. However,if you deploy 
+  a certain application within Openstack, let's say, a VM with an email server 
+  running on it, Keystone __will not have anything to do__ with the 
+  authentication of the users using the email server itself. 
+### Key Keystone concepts
 
 * __Service__: OpenStack cloud component listed in Keystone catalog. 
 Examples of the services are Nova, Neutron, Glance, Keystone itself, etc. 
@@ -32,14 +41,38 @@ available to the user.
 * __User__: Individual API consumer. User can be associated with roles, 
 projects, or both.
 * __Role__: Specific set of operations associated with a user. A role 
-includes a set of rights and privileges.
+includes a set of rights and privileges.  
 
-__IMPORTANT NOTE__: 
+### Keystone architecture
 
-  The Keystone operational scope is limited to the Openstack services, users, 
-  projects, etc. This means that, for example, if you create a new user that 
-  needs permissions to launch VMs in a given Openstack project, Keystone will 
-  be in charge of the authentication steps for this user. However,if you deploy 
-  a certain application within Openstack, let's say, a VM with an email server 
-  running on it, Keystone __will not have anything to do__ with the 
-  authentication of the users using the email server itself.   
+  * API endpoints typically listen on ports 5000 (for privileged calls) and 
+35357 for regular user API calls.
+  * Resources throughout an Openstack cloud are identified using human-readable 
+and UUIDs. Since names can be ambiguous or even not unique, UUIDs are the main
+way used by Keystone to identify Openstack resources.
+
+
+### Keystone services
+
+Keystone is organized as a group of internal services exposed on one or more 
+endpoints. Many of these services are used in a combined fashion by the 
+frontend. For example, an authenticate call will validate user/project 
+credentials with the Identity service and, upon success, create and return a 
+token with the Token service. The services provided by Keystone are listed 
+below:
+
+  1. Identity: provides auth credential validation and data about users and 
+groups. Both users and groups must be owned by a specific domain (not globally 
+unique).
+  2. Resource: provides data about projects and domains.
+    * Projects: represent the base unit of ownership in OpenStack. A project 
+      may contain VMS, networks, etc.
+    * Domains: high-level containers for projects, users and groups.
+  3. Assignment: provides data about roles and role assignments.
+    * Roles: dictate the level of authorization the end user can obtain. Roles 
+can be granted at either the domain or project level. A role can be assigned at 
+the individual user or group level. 
+    * Role Assignments: 3-tuple that has a Role, a Resource and an Identity.
+  4. Token: validates and manages tokens used for authenticating requests
+  5. Catalog and endpoints: provides an endpoint registry used for endpoint 
+discovery.
