@@ -33,3 +33,13 @@ available to the user.
 projects, or both.
 * __Role__: Specific set of operations associated with a user. A role 
 includes a set of rights and privileges.
+
+__IMPORTANT NOTE__: 
+
+  The Keystone operational scope is limited to the Openstack services, users, 
+  projects, etc. This means that, for example, if you create a new user that 
+  needs permissions to launch VMs in a given Openstack project, Keystone will 
+  be in charge of the authentication steps for this user. However,if you deploy 
+  a certain application within Openstack, let's say, a VM with an email server 
+  running on it, Keystone __will not have anything to do__ with the 
+  authentication of the users using the email server itself.   
