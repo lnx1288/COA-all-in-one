@@ -34,6 +34,9 @@ reading the most recent one):
     * Review [Openstack docs](https://docs.openstack.org/) if you feel that 
 some topics need further explanation.
 
+    * You may consider using the content section in this repo as a cheatsheet 
+to consolidate your knowledge prior to the exam. 
+
 3. __Practice...Practice...Practice!__
 
     Being performance-based, the COA exam will test your ability to perform 
@@ -61,9 +64,9 @@ some topics need further explanation.
 
     Overall, you can consider yourself ready for the exam if:
 
-    * yYou have thoroughly reviewed and practiced the 
+    * You have thoroughly reviewed and practiced the 
 [COA exam topics](https://www.openstack.org/coa/requirements)
-    * You are able to perform these tasks:
+    * You are able to perform these COA exam tasks:
       * without referring to the online doc for every task
       * without referring to personal notes or cheat sheets
       * without referring to content from a class
@@ -84,7 +87,7 @@ using a specific IP range, compulsory use of either the CLI or the GUI).
   * __Don't overthink the questions__, e.g., flavours are accessible across all 
 projects unless access is specified.
   * __Consider using the CLI for the entire exam__ (make sure you're proficient 
-with it). Fewer context switches might make things easier and less error-prone.
+with it first). Fewer context switches might make things easier and less error-prone.
   * For every topic, make sure you know which client method (CLI or GUI) is 
 the best (i.e., the quickest) for you.
   * __Some tasks can only be executed via CLI__, make sure you know which ones.
@@ -98,8 +101,8 @@ create the floating IPs before any other internal network-related tasks.
 
 ## Exam contents
 
-#### 1. Identity management
- * Manage and create domains, projects, users, and roles
+#### 1. [Identity management](../contents/identity-management/Identity-management.md)
+ * [Manage and create domains, projects, users, and roles](../contents/identity-management/Manage-and-create-domains-projects-users-and-roles.md)
  * Understand the differences between the member and admin roles
  * Create roles for the environment
  * Create and manage policy files and user access rules
@@ -117,7 +120,7 @@ create the floating IPs before any other internal network-related tasks.
 #### 3. Object Storage
  * Use the command line client to upload and manage files to Swift containers
  * Manage permissions on a container in object storage
-#### 4. Block Storage - 10%
+#### 4. Block Storage
  * Create and manage volumes
  * Attach volumes to instances
  * Create a new Block Storage volume and mount it to a Nova instance
@@ -138,7 +141,7 @@ create the floating IPs before any other internal network-related tasks.
  * Create and manage floating IP addresses
  * Assign floating IP address to instance
  * Detach floating IP address from instance
-#### 6. Image management - 5%
+#### 6. Image management
  * Upload a new image to an OpenStack image repository
  * Manage images (for example, add, update, remove)
  * Understand the difference between public versus private images
