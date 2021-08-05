@@ -8,7 +8,7 @@ to user-project pairs.
 OpenStack Identity service defines a user’s role on a project, but it is 
 completely up to the individual service to define what that role means. 
 This is referred to as the service’s policy. To get details about what the 
-privileges for each role are, refer to the policy.json file available for 
+privileges for each role are, refer to the `policy.json` file available for 
 each service in the `/etc/SERVICE/policy.json` file. 
 
 Keystone provides three main roles called __admin__, __member__, and 
