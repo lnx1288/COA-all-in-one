@@ -101,8 +101,13 @@ create the floating IPs before any other internal network-related tasks.
 
 ## Exam contents
 
+<<<<<<< HEAD
 #### 1. [Identity management](../blob/main/contents/identity-management/Identity-management.md)
  * [Manage and create domains, projects, users, and roles](../blob/main/contents/identity-management/Manage-and-create-domains-projects-users-and-roles.md)
+=======
+#### 1. [Identity management](../contents/identity-management/Identity-management.md)
+ * [Manage and create domains, projects, users, and roles](../contents/identity-management/Manage-and-create-domains-projects-users-and-roles.md)
+>>>>>>> 2a434c489df7653ae479efb9ee926185471eeb90
  * Understand the differences between the member and admin roles
  * Create roles for the environment
  * Create and manage policy files and user access rules
