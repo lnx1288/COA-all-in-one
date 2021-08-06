@@ -42,9 +42,10 @@ arbitrary) and add the variable export commands:
 
    This will ensure the variables are set up.
 
-__NOTE__: you can pass the above variables to each `openstack` command using flags
-instead of using environment variables, although the file-based method saves 
-time if multiple commands are to be run. Example of flag usage:
+__NOTE__: you can pass the above variables to each `openstack` command using 
+flags instead of using environment variables, although the environment 
+variables approach save time if multiple commands are to be run. Example of 
+flag usage:
 
 ```
 openstack --os-username=admin --os-user-domain-name=Default \
@@ -58,6 +59,7 @@ openstack --os-username=admin --os-user-domain-name=Default \
 
 The RC file can also be obtained from the Horizon dashboard. To download it 
 just: 
+
     1. Clic on the top-right menu
     2. Clic on OpenStack RC file 
 
