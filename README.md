@@ -23,14 +23,19 @@ services and projects, etc. For this step I'd suggest the below resources:
     * Udemy course "[Preparing to Certified OpenStack Administrator Exam Course](https://www.udemy.com/course/preparing-to-certified-openstack-administrator-coa-exam/)"
 
       At the time of this writing (Aug 2021) the course is a bit outdated. 
-      Nonetheless, I believe it offers a very thorough theoretical background 
-      that should be more than enough to pass the exam.
+      Nonetheless, I believe it offers an excellent theoretical background 
+      that should be more than enough to pass the exam. In addition, it gives 
+      you a useful set of exercises to practice for the exam.
 
     * Complement the above course with any of the following books (I'd suggest 
 reading the most recent one):
       * "Certified Openstack Administrator Study Guide" - Andrei Markelov
       * "Preparing for the Certified OpenStack Administrator Exam" - Matt Dorn
     
+      If you're already familiar with Openstack, any of the above books plus
+      hands-on practice on test labs (to work on task exeution speed) may be 
+      even enough to tackle the exam (without going through the Udemy course).
+
     * Review [Openstack docs](https://docs.openstack.org/) if you feel that 
 some topics need further explanation.
 
@@ -82,15 +87,24 @@ slow and affecting your speed to type and modify commands.
 with first. 
   * Copy/paste data from the question (e.g., instance/project names, flavour 
 specs) to avoid wasting time typing and prevent typos.
+  * Use the embedded notebook to track skipped/non-completed/flagged questions 
+so that you can get back to them later.
   * Ensure that you're fully aware of any question requirements (e.g., avoid 
 using a specific IP range, compulsory use of either the CLI or the GUI).
   * __Don't overthink the questions__, e.g., flavours are accessible across all 
 projects unless access is specified.
-  * __Consider using the CLI for the entire exam__ (make sure you're proficient 
-with it first). Fewer context switches might make things easier and less error-prone.
+  * __Consider using the CLI for the entire exam but only if you're proficient 
+with it__. Fewer context switches might make things easier and less error-prone. 
+However, __if for some reason you're more confortable with a GUI, then stick to 
+Horizon__, most of the tasks can be done there.
   * For every topic, make sure you know which client method (CLI or GUI) is 
 the best (i.e., the quickest) for you.
   * __Some tasks can only be executed via CLI__, make sure you know which ones.
+Here is a non-exhaustive list of "CLI-only" tasks:
+    * Managing `domains`
+    * Managing `endpoints`
+    * Downloading Glance images
+    * Managing `swift` ACL rules and expiration dates 
   * __Check, check and check again__ to ensure your work has met the criteria, 
 even if you know for a fact that your command/steps were correct. 
   * Based on my experience, the exam can be completed rather easily in half the 
@@ -106,7 +120,7 @@ create the floating IPs before any other internal network-related tasks.
  * [Understand the differences between the member and admin roles](../main/contents/identity-management/Understand-the-differences-between-the-member-and-admin-roles.md)
  * Create roles for the environment
  * Create and manage policy files and user access rules
- * Create and manage RC files to authenticate with Keystone for command line use
+ * [Create and manage RC files to authenticate with Keystone for command line use](../main/contents/identity-management/Create-and-manage-RC-files-to-authenticate-with-Keystone-for-command-line-use.md)
 #### 2. Compute
  * Create and manage flavors
  * Create and manage compute instances (for example, launch, shutdown, terminate)
