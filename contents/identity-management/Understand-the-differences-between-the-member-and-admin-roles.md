@@ -42,5 +42,9 @@ a domain, or a project. Depending on the assignment scope, two users with the
 with the `reader` role on a domain can only list projects within their domain.
     * `reader` is the least authoritative role in the hierarchy
 
+  __IMPORTANT__: The `admin` role is global, not per project, so granting a 
+  user the `admin` role in any project gives the user administrative rights 
+  across the whole environment.
+
 
 
