@@ -63,7 +63,8 @@ to consolidate your knowledge prior to the exam.
     [Openstack cloud in a single host](https://docs.openstack.org/devstack/latest/guides/single-machine.html). 
 
     Other useful resources to practice are the 
-    [OpenStack Training Labs](https://docs.openstack.org/training_labs/).
+    * [OpenStack Training Labs](https://docs.openstack.org/training_labs/).
+    * [COA practice questions](https://github.com/AJNOURI/COA)
 
 4. __Exam readiness check__
 
