@@ -18,6 +18,8 @@ __IMPORTANT NOTE__:
   authentication of the users using the email server itself. 
 ### Key Keystone concepts
 
+__Reference__: [Keystone Concepts](https://docs.openstack.org/keystone/latest/getting-started/architecture.html)
+
 * __Service__: OpenStack cloud component listed in Keystone catalog. 
 Examples of the services are Nova, Neutron, Glance, Keystone itself, etc. 
 Service provides one or more endpoints through which users can access 
@@ -45,8 +47,8 @@ includes a set of rights and privileges.
 
 ### Keystone architecture
 
-  * API endpoints typically listen on ports 5000 (for privileged calls) and 
-35357 for regular user API calls.
+  * API endpoints typically listen on ports `5000` (for privileged calls) and 
+`35357` for regular user API calls.
   * Resources throughout an Openstack cloud are identified using human-readable 
 and UUIDs. Since names can be ambiguous or even not unique, UUIDs are the main
 way used by Keystone to identify Openstack resources.
