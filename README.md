@@ -118,8 +118,8 @@ create the floating IPs before any other internal network-related tasks.
 #### 1. [Identity management](../main/contents/identity-management/Identity-management.md)
  * [Manage and create domains, projects, users, and roles](../main/contents/identity-management/Manage-and-create-domains-projects-users-and-roles.md)
  * [Understand the differences between the member and admin roles](../main/contents/identity-management/Understand-the-differences-between-the-member-and-admin-roles.md)
- * Create roles for the environment
- * Create and manage policy files and user access rules
+ * [Create roles for the environment](../main/contents/identity-management/Manage-and-create-domains-projects-users-and-roles.md)
+ * [Create and manage policy files and user access rules](../main/contents/identity-management/Create-and-manage-policy-files-and-user-access-rules.md)
  * [Create and manage RC files to authenticate with Keystone for command line use](../main/contents/identity-management/Create-and-manage-RC-files-to-authenticate-with-Keystone-for-command-line-use.md)
 #### 2. Compute
  * Create and manage flavors
