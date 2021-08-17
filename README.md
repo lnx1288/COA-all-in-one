@@ -159,6 +159,6 @@ create the floating IPs before any other internal network-related tasks.
 #### 6. [Image management](../main/contents/image-management/Image-management.md)
  * [Upload a new image to an OpenStack image repository](../main/contents/image-management/Upload-a-new-image-to-an-OpenStack-image-repository.md)
  * [Manage images (for example, add, update, remove)](../main/contents/image-management/Manage-images.md)
- * Understand the difference between public versus private images
+ * [Understand the difference between public versus private images](../main/contents/image-management/Understand-the-difference-between-public-versus-private-images.md)
  * Manage image metadata/properties
  * Manage image types and backends
