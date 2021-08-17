@@ -158,7 +158,7 @@ create the floating IPs before any other internal network-related tasks.
  * Detach floating IP address from instance
 #### 6. [Image management](../main/contents/image-management/Image-management.md)
  * [Upload a new image to an OpenStack image repository](../main/contents/image-management/Upload-a-new-image-to-an-OpenStack-image-repository.md)
- * Manage images (for example, add, update, remove)
+ * [Manage images (for example, add, update, remove)](../main/contents/image-management/Manage-images.md)
  * Understand the difference between public versus private images
  * Manage image metadata/properties
  * Manage image types and backends
