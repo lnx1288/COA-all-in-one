@@ -65,14 +65,14 @@ below:
 groups. Both users and groups must be owned by a specific domain (not globally 
 unique).
   2. Resource: provides data about projects and domains.
-    * Projects: represent the base unit of ownership in OpenStack. A project 
+       * Projects: represent the base unit of ownership in OpenStack. A project 
       may contain VMS, networks, etc.
-    * Domains: high-level containers for projects, users and groups.
+       * Domains: high-level containers for projects, users and groups.
   3. Assignment: provides data about roles and role assignments.
-    * Roles: dictate the level of authorization the end user can obtain. Roles 
+       * Roles: dictate the level of authorization the end user can obtain. Roles 
 can be granted at either the domain or project level. A role can be assigned at 
 the individual user or group level. 
-    * Role Assignments: 3-tuple that has a Role, a Resource and an Identity.
+       * Role Assignments: 3-tuple that has a Role, a Resource and an Identity.
   4. Token: validates and manages tokens used for authenticating requests
   5. Catalog and endpoints: provides an endpoint registry used for endpoint 
 discovery.
