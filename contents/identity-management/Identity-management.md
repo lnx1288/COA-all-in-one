@@ -7,15 +7,13 @@ and role information for the cloud environment.
 Keystone supports multiple forms of authentication, including login name and
 password, token-based credentials, and REST API logins. 
 
-__IMPORTANT NOTE__: 
-
-  The Keystone operational scope is limited to the Openstack services, users, 
-  projects, etc. This means that, for example, if you create a new user that 
-  needs permissions to launch VMs in a given Openstack project, Keystone will 
-  be in charge of the authentication steps for this user. However,if you deploy 
-  a certain application within Openstack, let's say, a VM with an email server 
-  running on it, Keystone __will not have anything to do__ with the 
-  authentication of the users using the email server itself. 
+__IMPORTANT NOTE__: The Keystone operational scope is limited to the Openstack services, users, 
+projects, etc. This means that, for example, if you create a new user that 
+needs permissions to launch VMs in a given Openstack project, Keystone will 
+be in charge of the authentication steps for this user. However, if you deploy 
+a certain application within Openstack, let's say, a VM with an email server 
+running on it, Keystone __won't have anything to do__ with the 
+authentication of the users using the email server itself. 
 ### Key Keystone concepts
 
 __Reference__: [Keystone Concepts](https://docs.openstack.org/keystone/latest/getting-started/architecture.html)
