@@ -161,4 +161,4 @@ create the floating IPs before any other internal network-related tasks.
  * [Manage images (for example, add, update, remove)](../main/contents/image-management/Manage-images.md)
  * [Understand the difference between public versus private images](../main/contents/image-management/Understand-the-difference-between-public-versus-private-images.md)
  * [Manage image metadata/properties](../main/contents/image-management/Manage-image-metadata-properties.md)
- * Manage image types and backends
+ * [Manage image types and backends](../main/contents/image-management/Manage-image-types-and-backends.md)
