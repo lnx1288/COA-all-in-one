@@ -38,3 +38,10 @@ list until the member “accepts” the image.
 
 Only the image owner may create members. Only an image member may modify his 
 or her member status.
+
+## Summary: Private vs. Public images
+
+| Property           | Public Image               | Private Image             | 
+| ------------------ | :--------------------------| :-------------------------| 
+| Image creation     | Created by cloud admin     | Created by project admin  |
+| Visibility         | Every user and project     | Project users only        |
