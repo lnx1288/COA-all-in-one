@@ -116,6 +116,10 @@ create the floating IPs before any other internal network-related tasks.
 
 ## Exam contents
 
+See below the list of contents you need to master for the COA exam. Most of the
+sections have a __Reference__ included so that you can expand the summarized
+content on this repo with official sources. 
+
 #### 1. [Identity management](../main/contents/identity-management/Identity-management.md)
  * [Manage and create domains, projects, users, and roles](../main/contents/identity-management/Manage-and-create-domains-projects-users-and-roles.md)
  * [Understand the differences between the member and admin roles](../main/contents/identity-management/Understand-the-differences-between-the-member-and-admin-roles.md)
