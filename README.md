@@ -127,7 +127,7 @@ content on this repo with official sources.
  * [Create and manage policy files and user access rules](../main/contents/identity-management/Create-and-manage-policy-files-and-user-access-rules.md)
  * [Create and manage RC files to authenticate with Keystone for command line use](../main/contents/identity-management/Create-and-manage-RC-files-to-authenticate-with-Keystone-for-command-line-use.md)
 #### 2. [Compute](../main/contents/compute/Compute.md)
- * Create and manage flavors
+ * [Create and manage flavors](../main/contents/compute/Create-and-manage-flavors.md)
  * Create and manage compute instances (for example, launch, shutdown, terminate)
  * Generate and manage SSH keys for use when connecting to instances
  * Access an instance using an SSH key
