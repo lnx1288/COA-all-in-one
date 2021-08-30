@@ -63,3 +63,54 @@ servers, and have a manager that is listening for RPC messages. The one major
 exception is `nova-compute`, where a single process runs on the hypervisor it 
 is managing (except when using the VMware or Ironic drivers). The manager also, 
 optionally, has periodic tasks.
+
+### Compute concepts
+
+There are various important concepts to be familiar with related to the compute
+service and instance management. The most important ones according to the 
+[COA exam topics](https://www.openstack.org/coa/requirements) are briefly 
+discussed below:
+
+#### Flavors
+
+In OpenStack, a flavor defines the compute, memory, and storage capacity of 
+an instance. To put it simply, a flavor is an available hardware configuration 
+for a VM and it defines the VM size that can be launched. As an administrative 
+user, you can create, edit, and delete flavors. Immediately after installation 
+of OpenStack, several predefined flavors are available to be used.
+
+Flavors can also determine on which compute host a flavor can be used to launch 
+an instance. 
+
+#### Security groups
+
+Security groups are sets of IP filter rules that are applied to all project 
+instances, which define networking access to the instance. Group rules are 
+project specific; project members can edit the default rules for their group 
+and add new rule sets.
+
+All projects have a `default` security group which is applied to any instance 
+that has no other defined security group. Unless you change the default, this 
+security group denies all incoming traffic and allows only outgoing traffic to 
+the instance.
+
+#### Snapshots
+
+A `snapshot` is a mechanism that allows you to create a new image from a 
+running instance. This mainly serves two purposes:
+
+  * Backup: save the main disk of your instance to an image and later boot a 
+new instance from this image with the saved data.
+  * Templating: customise a base image and save it to use as a template for 
+new instances.
+
+It is important to know that a `snapshot` is not an instance recovery point,
+it is the same as a regular Glance image. You can start a new virtual machine 
+from a `snapshot` of another virtual machine.
+
+#### Quotas
+
+Nova uses a quota system for setting limits on resources such as number of 
+instances or amount of CPU that a specific project or user can use. 
+
+
