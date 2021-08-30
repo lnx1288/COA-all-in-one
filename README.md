@@ -126,7 +126,7 @@ content on this repo with official sources.
  * [Create roles for the environment](../main/contents/identity-management/Manage-and-create-domains-projects-users-and-roles.md)
  * [Create and manage policy files and user access rules](../main/contents/identity-management/Create-and-manage-policy-files-and-user-access-rules.md)
  * [Create and manage RC files to authenticate with Keystone for command line use](../main/contents/identity-management/Create-and-manage-RC-files-to-authenticate-with-Keystone-for-command-line-use.md)
-#### 2. Compute
+#### 2. [Compute](../main/contents/compute/Compute.md)
  * Create and manage flavors
  * Create and manage compute instances (for example, launch, shutdown, terminate)
  * Generate and manage SSH keys for use when connecting to instances
