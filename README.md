@@ -136,7 +136,7 @@ content on this repo with official sources.
  * Manage Nova host consoles (VNC, NOVNC, spice)
  * Manage instance snapshots
  * Manage instance quotas
-#### 3. Object Storage
+#### 3. [Object Storage](../main/contents/object-storage/Object-Storage.md)
  * Use the command line client to upload and manage files to Swift containers
  * Manage permissions on a container in object storage
 #### 4. Block Storage
