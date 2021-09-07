@@ -22,9 +22,21 @@ logic to ensure data replication and distribution across different devices,
 inexpensive commodity hard drives and servers can be used in lieu of more 
 expensive equipment.
 
+__IMPORTANT__: only some Swift-related operations are available using the 
+`openstack` CLI client and even less are available through the Horizon 
+dashboard. Therefore, the use of the `swift` client is recommended for the exam.    
+
 ### Swift Architecture
 
 Logically, Swift consists of three levels: accounts, containers, and objects.
+Each account can own many containers and one container can contain many objects.
+One object can only be contained in one container. However, while the container 
+can only be owned by one account, other accounts can be granted read/write 
+access.
+
+On the other hand, containers are flat namespaces, meaning that there is no 
+such thing as subcontainers, folders, directories, etc. Therefore, each object 
+name in a container must be unique.    
 
 OpenStack Object Storage (swift) service provides software that stores and 
 retrieves data over HTTP (all objects stored have a URL). Objects (blobs of 
@@ -88,3 +100,9 @@ example), the file is quarantined, and replication will replace the bad file
 from another replica. If other errors are found they are logged (for example, 
 an object’s listing can’t be found on any container server it should be).
 
+### Swift implementation details
+
+Unlike other Openstack projects, Swift can be deployed standalone (not 
+integrated to an Openstack cloud) and therefore it keeps its own accounts 
+database. If Swift is integrated into Openstack then Swift account auto-creation 
+based on Keystone data.
