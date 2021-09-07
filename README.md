@@ -137,8 +137,8 @@ content on this repo with official sources.
  * Manage instance snapshots
  * Manage instance quotas
 #### 3. [Object Storage](../main/contents/object-storage/Object-Storage.md)
- * Use the command line client to upload and manage files to Swift containers
- * Manage permissions on a container in object storage
+ * [Use the command line client to upload and manage files to Swift containers](../main/contents/object-storage/Use-CLI-to-upload-and-manage-files-to-Swift-containers.md)
+ * [Manage permissions on a container in object storage](../main/contents/object-storage/Use-CLI-to-upload-and-manage-files-to-Swift-containers.md)
 #### 4. Block Storage
  * Create and manage volumes
  * Attach volumes to instances
