@@ -43,6 +43,26 @@ projects, or both.
 * __Role__: Specific set of operations associated with a user. A role 
 includes a set of rights and privileges.  
 
+#### Domains vs projects
+
+Traditionally, the resource mapping could be summed up by saying that _"a user 
+has a role in a project"_. The user is typically an individual that is 
+communicating with the cloud services, submitting requests to provision and 
+destroy infrastructure. A role is an arbitrary bit of metadata that is used to 
+influence that user’s authority and management within the environment. The 
+project is a container used to group and isolate resources from one another. 
+With the original mapping model, when the _admin_ role was applied to a user, 
+the user would become a cloud administrator, rather than just a project 
+administrator, as intended.
+
+With OpenStack project __domain__, the resource mapping can be summed up by 
+saying that a _"domain is made up of users and projects, wherein users can have 
+roles at the project and domain level"_. With this model, it is now possible to 
+have an admin user for an entire domain, allowing that user to manage resources 
+such as users and projects for that particular domain, but a user might also 
+have a role applied just for a particular project, which behaves much like it 
+did in the previous model.
+
 ### Keystone architecture
 
   * API endpoints typically listen on ports `5000` (for privileged calls) and 
