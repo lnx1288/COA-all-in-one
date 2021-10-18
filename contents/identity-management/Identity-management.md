@@ -107,7 +107,7 @@ The table below shows common Port Numbers for OpenStack Services
 | 9292                  | Image service Glance                        |
 | 9191                  | Glance Registry                             |
 | 8774                  | Compute service Nova                        |
-| 8080                  | and 6001-6003 Object Storage services Swift |
+| 8080, 6001-6003       | Object Storage services Swift               |
 | 9696                  | Networking service Neutron                  | 
 | 8777                  | Telemetry service Ceilometer                |
 | 8004                  | Orchestration service Heat                  |
