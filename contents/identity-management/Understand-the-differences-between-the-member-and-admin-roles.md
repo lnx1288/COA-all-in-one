@@ -15,6 +15,9 @@ Keystone provides three main roles called __admin__, __member__, and
 __reader__ by default. Operators can grant these roles to any actor 
 (e.g., group or user) on any scope (e.g., system, domain, or project).
 
+__NOTE:__ A reference regarding scopes (useful to comprehend _system
+scope_ for instance) can be found [here](https://specs.openstack.org/openstack/keystone-specs/specs/keystone/queens/system-scope.html).
+
 ### [Roles Definitions](https://docs.openstack.org/keystone/latest/admin/service-api-protection.html#roles-definitions)
 
   * The `admin` role implies the `member` role, and the `member` role implies 
