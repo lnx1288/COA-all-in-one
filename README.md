@@ -144,7 +144,7 @@ the word _latset_ on the link to
 #### 3. [Object Storage](../main/contents/object-storage/Object-Storage.md)
  * [Use the command line client to upload and manage files to Swift containers](../main/contents/object-storage/Use-CLI-to-upload-and-manage-files-to-Swift-containers.md)
  * [Manage permissions on a container in object storage](../main/contents/object-storage/Manage-permissions-on-a-container-in-object-storage.md)
-#### 4. Block Storage
+#### 4. [Block Storage](../main/contents/block-storage/block-storage.md)
  * [Create and manage volumes](../main/contents/block-storage/Create-and-manage-volumes.md)
  * [Attach volumes to instances](https://docs.openstack.org/horizon/latest/user/manage-volumes.html#attach-a-volume-to-an-instance)
  * [Create a new Block Storage volume and mount it to a Nova instance](../main/contents/block-storage/Create-and-manage-volumes.md)
