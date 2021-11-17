@@ -63,7 +63,7 @@ knowledge you'll need to master for the exam.
     which can be used to deploy a fully-functional
     [Openstack cloud in a single host](https://docs.openstack.org/devstack/latest/guides/single-machine.html). 
 
-    Other useful resources to practice are the 
+    Other useful resources to practice are: 
     * [OpenStack Training Labs](https://docs.openstack.org/training_labs/).
     * [COA practice questions](https://github.com/AJNOURI/COA)
 
@@ -73,13 +73,14 @@ knowledge you'll need to master for the exam.
 
     * You have thoroughly reviewed and practiced the 
 [COA exam topics](https://www.openstack.org/coa/requirements)
-    * You are able to perform these COA exam tasks:
+    * You are able to perform these [COA exam tasks](https://www.openstack.org/coa/requirements):
       * without referring to the online doc for every task
       * without referring to personal notes or cheat sheets
       * without referring to content from a class
       * without relying on the online help or man pages
         
-        If you use help (`--help`), do you understand the output?
+        If you use help (`--help`), do you understand the output? Practice
+        using `--help` as the only tool available to get through any task.
 
 ## Exam tips
 
@@ -88,7 +89,9 @@ slow and affecting your speed to type and modify commands.
   * __Read each question carefully__ and answer the questions you're familiar 
 with first. 
   * Copy/paste data from the question (e.g., instance/project names, flavour 
-specs) to avoid wasting time typing and prevent typos.
+specs) to avoid wasting time typing and prevent typos (I'm not sure if this is 
+allowed anymore, if copy/paste is forbidden you may want to switch to the 
+_select text / middle-click to paste_ available in Linux).
   * Use the embedded notebook to track skipped/non-completed/flagged questions 
 so that you can get back to them later.
   * Ensure that you're fully aware of any question requirements (e.g., avoid 
@@ -102,10 +105,10 @@ Horizon__, most of the tasks can be done there.
   * For every topic, make sure you know which client method (CLI or GUI) is 
 the best (i.e., the quickest) for you.
   * __Some tasks can only be executed via CLI__, make sure you know which ones.
-Here is a non-exhaustive list of "CLI-only" tasks:
+Here is a non-exhaustive list of _"CLI-only"_ tasks:
     * Managing `domains`
     * Managing `endpoints`
-    * Downloading Glance images
+    * Downloading `glance` images
     * Managing `swift` ACL rules and expiration dates 
   * __Check, check and check again__ to ensure your work has met the criteria, 
 even if you know for a fact that your command/steps were correct. 
