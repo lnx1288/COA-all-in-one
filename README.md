@@ -22,7 +22,7 @@ contents, etc. For this step I'd suggest the below resources:
 services and projects, etc. For this step I'd suggest the below resources:
     * Udemy course "[Preparing to Certified OpenStack Administrator Exam Course](https://www.udemy.com/course/preparing-to-certified-openstack-administrator-coa-exam/)"
 
-      At the time of this writing (Aug 2021) the course is a bit outdated. 
+      At the time of this writing (Nov 2021) the course is a bit outdated. 
       Nonetheless, I believe it offers an excellent theoretical background 
       that should be more than enough to pass the exam. In addition, it gives 
       you a useful set of exercises to practice for the exam.
@@ -39,10 +39,11 @@ reading the most recent one):
     * Review [Openstack docs](https://docs.openstack.org/) if you feel that 
 some topics need further explanation.
 
-    * You may consider using the content section in this repo as a cheatsheet 
-to consolidate your knowledge prior to the exam. 
+    * The [Exam contents](#exam-contents) section in this repo include links 
+(to official Openstack documentation) and content targetting most of the 
+knowledge you'll need to master for the exam.  
 
-3. __Practice...Practice...Practice!__
+1. __Practice...Practice...Practice!__
 
     Being performance-based, the COA exam will test your ability to perform 
     day-to-day operations on an Openstack cloud. There are two key limitations 
@@ -66,7 +67,7 @@ to consolidate your knowledge prior to the exam.
     * [OpenStack Training Labs](https://docs.openstack.org/training_labs/).
     * [COA practice questions](https://github.com/AJNOURI/COA)
 
-4. __Exam readiness check__
+2. __Exam readiness check__
 
     Overall, you can consider yourself ready for the exam if:
 
@@ -116,10 +117,14 @@ create the floating IPs before any other internal network-related tasks.
 
 ## Exam contents
 
-See below the list of contents you need to master for the COA exam. Most of the
-sections have a __Reference__ included so that you can expand the summarized
-content on this repo with official sources. 
+See below the list of contents you need to master for the COA exam and some
+useful references. 
 
+__NOTE__: the links provided as references point to the _latest_ Openstack
+release at any time (at the time of this writing is Xena). This means that 
+if you want to check the documentation for a specific Openstack release
+other than the _latest_ one, most of the time you will only need to change
+the word _latset_ on the link to  
 #### 1. [Identity management](../main/contents/identity-management/Identity-management.md)
  * [Manage and create domains, projects, users, and roles](../main/contents/identity-management/Manage-and-create-domains-projects-users-and-roles.md)
  * [Understand the differences between the member and admin roles](../main/contents/identity-management/Understand-the-differences-between-the-member-and-admin-roles.md)
@@ -128,24 +133,24 @@ content on this repo with official sources.
  * [Create and manage RC files to authenticate with Keystone for command line use](../main/contents/identity-management/Create-and-manage-RC-files-to-authenticate-with-Keystone-for-command-line-use.md)
 #### 2. [Compute](../main/contents/compute/Compute.md)
  * [Create and manage flavors](../main/contents/compute/Create-and-manage-flavors.md)
- * Create and manage compute instances (for example, launch, shutdown, terminate)
- * Generate and manage SSH keys for use when connecting to instances
- * Access an instance using an SSH key
- * Configure an instance with a floating IP address;use it to connect to the instance
- * Create instances with security groups
- * Manage Nova host consoles (VNC, NOVNC, spice)
+ * [Create and manage compute instances (for example, launch, shutdown, terminate)](../main/contents/compute/Create-and-manage-compute-instances.md)
+ * [Generate and manage SSH keys for use when connecting to instances](../main/contents/compute/Generate-and-manage-SSH-keys.md)
+ * [Access an instance using an SSH key](https://docs.openstack.org/horizon/latest/user/launch-instances.html#connect-to-your-instance-by-using-ssh)
+ * [Configure an instance with a floating IP address;use it to connect to the instance](https://docs.openstack.org/horizon/latest/user/configure-access-and-security-for-instances.html#allocate-a-floating-ip-address-to-an-instance)
+ * [Create instances with security groups](../main/contents/compute/Create-instances-with-security-groups.md)
+ * [Manage Nova host consoles (VNC, NOVNC, spice)](https://docs.openstack.org/nova/latest/admin/remote-console-access.html)
  * Manage instance snapshots
- * Manage instance quotas
+ * [Manage instance quotas](../main/contents/compute/Manage-instance-quotas.md)
 #### 3. [Object Storage](../main/contents/object-storage/Object-Storage.md)
  * [Use the command line client to upload and manage files to Swift containers](../main/contents/object-storage/Use-CLI-to-upload-and-manage-files-to-Swift-containers.md)
  * [Manage permissions on a container in object storage](../main/contents/object-storage/Manage-permissions-on-a-container-in-object-storage.md)
 #### 4. Block Storage
- * Create and manage volumes
- * Attach volumes to instances
- * Create a new Block Storage volume and mount it to a Nova instance
- * Manage volume quotas
- * Backup and restore volumes
- * Manage volume snapshots (for example, create, list, recover)
+ * [Create and manage volumes](../main/contents/block-storage/Create-and-manage-volumes.md)
+ * [Attach volumes to instances](https://docs.openstack.org/horizon/latest/user/manage-volumes.html#attach-a-volume-to-an-instance)
+ * [Create a new Block Storage volume and mount it to a Nova instance](../main/contents/block-storage/Create-and-manage-volumes.md)
+ * [Manage volume quotas](../main/contents/block-storage/Manage-volume-quotas.md)
+ * [Backup and restore volumes](https://docs.openstack.org/cinder/latest/admin/blockstorage-volume-backups.html)
+ * [Manage volume snapshots (for example, create, list, recover)](../main/contents/block-storage/Manage-volume-snapshots.md)
 #### 5. Networking
  * Manage network resources (routers, networks, subnets)
  * Create external/public networks
