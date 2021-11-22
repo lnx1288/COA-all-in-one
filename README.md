@@ -54,7 +54,7 @@ knowledge you'll need to master for the exam.
     [COA exam topics](https://www.openstack.org/coa/requirements). 
 
     Luckily, you can still use the embedded help on both the CLI and the GUI
-    tools. I'd recommend to be quite familiar in the use of the CLI help 
+    tools. I'd recommend to get familiar in the use of the CLI help 
     (`--help` option for the `openstack` CLI) to avoid memorizing all the 
     available options. Being proficient in using the CLI tool help will save 
     you quite a lot of time.
@@ -65,7 +65,15 @@ knowledge you'll need to master for the exam.
 
     Other useful resources to practice are: 
     * [OpenStack Training Labs](https://docs.openstack.org/training_labs/).
-    * [COA practice questions](https://github.com/AJNOURI/COA)
+    
+    Overall, I would suggest setting up a Devstack deployment and repeatedly
+    going through the exercises included in the course and repo below:
+
+      * [Preparing to Certified OpenStack Administrator Exam Course](https://www.udemy.com/course/preparing-to-certified-openstack-administrator-coa-exam/)
+      * [COA practice questions](https://github.com/AJNOURI/COA)
+
+    __NOTE__: the course full set of exercises can be found in the 
+    `practice-exercises` folder in this repo.
 
 2. __Exam readiness check__
 
@@ -120,14 +128,14 @@ create the floating IPs before any other internal network-related tasks.
 
 ## Exam contents
 
-See below the list of contents you need to master for the COA exam and some
-useful references. 
+See below the list of contents you need to master for the COA exam (at
+the time of this writing). 
 
-__NOTE__: the links provided as references point to the _latest_ Openstack
+__NOTE__: Each section includes references pointing to the _latest_ Openstack
 release at any time (at the time of this writing is Xena). This means that 
 if you want to check the documentation for a specific Openstack release
 other than the _latest_ one, most of the time you will only need to change
-the word _latset_ on the link to  
+the word _latest_ on the link to  
 #### 1. [Identity management](../main/contents/identity-management/Identity-management.md)
  * [Manage and create domains, projects, users, and roles](../main/contents/identity-management/Manage-and-create-domains-projects-users-and-roles.md)
  * [Understand the differences between the member and admin roles](../main/contents/identity-management/Understand-the-differences-between-the-member-and-admin-roles.md)
@@ -155,19 +163,19 @@ the word _latset_ on the link to
  * [Backup and restore volumes](https://docs.openstack.org/cinder/latest/admin/blockstorage-volume-backups.html)
  * [Manage volume snapshots (for example, create, list, recover)](../main/contents/block-storage/Manage-volume-snapshots.md)
 #### 5. Networking
- * Manage network resources (routers, networks, subnets)
- * Create external/public networks
- * Create project networks
- * Create project routers
- * Attach routers to public and project networks
+ * [Manage network resources (routers, networks, subnets)](../main/contents/networking/Manage-network-resources.md)
+ * [Create external/public networks](../main/contents/networking/Manage-network-resources.md)
+ * [Create project networks](../main/contents/networking/Manage-network-resources.md)
+ * [Create project routers](../main/contents/networking/Manage-network-resources.md)
+ * [Attach routers to public and project networks](../main/contents/networking/Manage-network-resources.md)
  * Manage network services for a virtual environment
- * Manage network quotas
+ * [Manage network quotas](https://docs.openstack.org/neutron/latest/admin/ops-quotas.html)
  * Manage network interfaces on compute instances
- * Create and manage project security groups and rules
- * Assign security group to instance
- * Create and manage floating IP addresses
- * Assign floating IP address to instance
- * Detach floating IP address from instance
+ * [Create and manage project security groups and rules](../main/contents/networking/Create-and-manage-project-security-groups-and-rules.md)
+ * [Assign security group to instance](https://uh-iaas.readthedocs.io/security-groups.html#apply-or-remove-security-groups)
+ * [Create and manage floating IP addresses](../main/contents/networking/Create-and-manage-floating-IP-addresses.md)
+ * [Assign floating IP address to instance](../main/contents/networking/Create-and-manage-floating-IP-addresses.md)
+ * [Detach floating IP address from instance](../main/contents/networking/Create-and-manage-floating-IP-addresses.md)
 #### 6. [Image management](../main/contents/image-management/Image-management.md)
  * [Upload a new image to an OpenStack image repository](../main/contents/image-management/Upload-a-new-image-to-an-OpenStack-image-repository.md)
  * [Manage images (for example, add, update, remove)](../main/contents/image-management/Manage-images.md)
