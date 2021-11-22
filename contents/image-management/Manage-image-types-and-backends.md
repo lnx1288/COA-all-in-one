@@ -2,7 +2,7 @@
 
 ### Image types
 
-__Reference__: [Disk and Container Formats](https://docs.openstack.org/glance/latest/user/formats.html)
+  * [Disk and Container Formats](https://docs.openstack.org/glance/latest/user/formats.html)
 
 The disk format of a virtual machine image is the format of the underlying disk 
 image. Virtual appliance vendors have different formats for laying out the 
@@ -12,7 +12,7 @@ format that also contains metadata about the actual virtual machine.
 
 ### Glance storage backends
 
-__Reference__: [Configure Glance storage backends](https://docs.openstack.org/glance/latest/configuration/configuring.html#configuring-glance-storage-backends)
+  * [Configure Glance storage backends](https://docs.openstack.org/glance/latest/configuration/configuring.html#configuring-glance-storage-backends)
 
 Glance can support various data store backends, such as Swift, Ceph, NFS, local 
 file system, and others. Storage vendors like EMC or NetApp produce plug-ins 

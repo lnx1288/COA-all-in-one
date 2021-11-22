@@ -1,6 +1,5 @@
 ## Object Storage
 
-__References__:
   * [Swift Architectural Overview](https://docs.openstack.org/swift/latest/overview_architecture.html)
 
 In contrast to file storage, object storage works with an object that contains 

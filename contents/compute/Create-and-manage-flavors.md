@@ -11,5 +11,5 @@ list of the available specs.
 
 ## Create and manage flavors
 
-  * [Command Reference (API V2)](https://docs.openstack.org/python-openstackclient/latest/cli/command-objects/flavor.html)
-  * [GUI Reference](https://docs.openstack.org/horizon/latest/admin/manage-flavors.html)
+  * [CLI](https://docs.openstack.org/python-openstackclient/latest/cli/command-objects/flavor.html)
+  * [GUI](https://docs.openstack.org/horizon/latest/admin/manage-flavors.html)

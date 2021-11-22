@@ -1,6 +1,5 @@
 ## Manage image metadata/properties
 
-__References__: 
   * [Manage image metadata/properties](https://docs.openstack.org/image-guide/introduction.html#image-metadata)
   * [List of image properties](https://docs.openstack.org/glance/latest/admin/useful-image-properties.html)
 

@@ -1,6 +1,5 @@
 ## Understand the difference between public versus private images
 
-__References__: 
   * [Image visibility](https://docs.openstack.org/api-ref/image/v2/index.html#general-information)
   * [Image Sharing](https://docs.openstack.org/image-guide/share-images.html)
   * [Glance visibility wiki](https://wiki.openstack.org/wiki/Glance-v2-community-image-visibility-design)

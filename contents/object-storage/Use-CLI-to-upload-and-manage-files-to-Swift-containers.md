@@ -11,8 +11,8 @@ of the file, that complete path will be the name of the uploaded object.
   * Swift has a single object size limit of 5GiB. In order to upload files 
 larger than this, we must create a large object that consists of smaller 
 segments.
-  * [Command Reference](https://docs.openstack.org/python-swiftclient/latest/cli/index.html)
-  * [GUI Reference](https://docs.openstack.org/horizon/latest/user/manage-containers.html)
+  * [CLI](https://docs.openstack.org/python-swiftclient/latest/cli/index.html)
+  * [GUI](https://docs.openstack.org/horizon/latest/user/manage-containers.html)
 ### Object expiration (optional)
 
 __NOTE__: this section is out of the COA exam requirements scope at the time of
@@ -21,7 +21,7 @@ this writing, but it is included here for completeness.
   * Any object can be set to expire at a defined moment in time.
   * An expired object is no longer accessible and eventually deleted (it can 
 still be listed for some time)
-  * [Command Reference](https://docs.openstack.org/python-swiftclient/latest/cli/index.html)
+  * [CLI](https://docs.openstack.org/python-swiftclient/latest/cli/index.html)
     * [__Examples__](https://docs.openstack.org/python-swiftclient/latest/cli/index.html#examples):
       * Set object to expire after amount of seconds: 
           ```

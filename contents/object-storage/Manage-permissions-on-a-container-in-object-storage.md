@@ -1,6 +1,5 @@
 ## Manage permissions on a container in object storage
 
-__References__:
   * [Manage access](https://docs.openstack.org/newton/user-guide/cli-swift-manage-access-swift.html)
   * [Access Control Lists (ACLs)](https://docs.openstack.org/swift/latest/overview_acl.html)
 
