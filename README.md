@@ -150,7 +150,7 @@ the word _latest_ on the link to
  * [Configure an instance with a floating IP address;use it to connect to the instance](https://docs.openstack.org/horizon/latest/user/configure-access-and-security-for-instances.html#allocate-a-floating-ip-address-to-an-instance)
  * [Create instances with security groups](../main/contents/compute/Create-instances-with-security-groups.md)
  * [Manage Nova host consoles (VNC, NOVNC, spice)](https://docs.openstack.org/nova/latest/admin/remote-console-access.html)
- * Manage instance snapshots
+ * [Manage instance snapshots](https://access.redhat.com/documentation/en-us/red_hat_openstack_platform/8/html/instances_and_images_guide/ch-manage_instances#section-instance-snapshots)
  * [Manage instance quotas](../main/contents/compute/Manage-instance-quotas.md)
 #### 3. [Object Storage](../main/contents/object-storage/Object-Storage.md)
  * [Use the command line client to upload and manage files to Swift containers](../main/contents/object-storage/Use-CLI-to-upload-and-manage-files-to-Swift-containers.md)
