@@ -118,6 +118,8 @@ Here is a non-exhaustive list of _"CLI-only"_ tasks:
     * Managing `endpoints`
     * Downloading `glance` images
     * Managing `swift` ACL rules and expiration dates 
+    * Managing quotas (not all project quotas can be managed using Horizon, e.g., 
+service quotas)
   * __Check, check and check again__ to ensure your work has met the criteria, 
 even if you know for a fact that your command/steps were correct. 
   * Based on my experience, the exam can be completed rather easily in half the 
