@@ -14,5 +14,5 @@
     lacked networking user-guides at the time of this writing. 
   * Connect a router
     * [GUI](https://docs.openstack.org/horizon/latest/user/create-networks.html#create-a-router)
-    * [CLI]()
+    * [CLI](https://docs.openstack.org/ocata/user-guide/cli-create-and-manage-networks.html#create-routers)
 
