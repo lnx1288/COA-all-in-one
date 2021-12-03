@@ -17,6 +17,7 @@ contents, etc. For this step I'd suggest the below resources:
     * [Short video introducing the exam](https://www.openstack.org/videos/summits/virtual/OpenStack-COA-Info-Session)
     * [COA exam topics](https://www.openstack.org/coa/requirements)
     * [COA handbook](https://www.openstack.org/coa/)
+    * [Tips for the COA exam](https://www.mirantis.com/blog/tips-for-the-new-coa/)
 
 2. __Get a solid theoretical background__ about the Openstack architecture, core
 services and projects, etc. For this step I'd suggest the below resources:
@@ -85,10 +86,12 @@ knowledge you'll need to master for the exam.
       * without referring to the online doc for every task
       * without referring to personal notes or cheat sheets
       * without referring to content from a class
-      * without relying on the online help or man pages
+      * without relying on the online help
+      * with minimal help from man pages
         
         If you use help (`--help`), do you understand the output? Practice
-        using `--help` as the only tool available to get through any task.
+        using `--help` or `-h` as the only tool available to get through any 
+        task.
 
 ## Exam tips
 
@@ -96,12 +99,14 @@ knowledge you'll need to master for the exam.
 slow and affecting your speed to type and modify commands.
   * __Read each question carefully__ and answer the questions you're familiar 
 with first. 
-  * Copy/paste data from the question (e.g., instance/project names, flavour 
-specs) to avoid wasting time typing and prevent typos (I'm not sure if this is 
-allowed anymore, if copy/paste is forbidden you may want to switch to the 
-_select text / middle-click to paste_ available in Linux).
-  * Use the embedded notebook to track skipped/non-completed/flagged questions 
-so that you can get back to them later.
+  * Use the data from the question (e.g., instance/project names, flavour 
+specs) to avoid wasting time typing and prevent typos. According to the 
+handbookyou cannot copy/pastebut I was allowed to use the 
+_select text / middle-click to paste_ method.
+  * You're allowed to open a test-app (notepad), use it to track 
+skipped/non-completed/flagged questions so that you can get back to them 
+later. In addition you may be allowed to have a blank sheet of paper and 
+pen/pencil on your desktop and you could use that for the same purpose. 
   * Ensure that you're fully aware of any question requirements (e.g., avoid 
 using a specific IP range, compulsory use of either the CLI or the GUI).
   * __Don't overthink the questions__, e.g., flavours are accessible across all 
@@ -109,35 +114,50 @@ projects unless access is specified.
   * __Consider using the CLI for the entire exam but only if you're proficient 
 with it__. Fewer context switches might make things easier and less error-prone. 
 However, __if for some reason you're more confortable with a GUI, then stick to 
-Horizon__, most of the tasks can be done there.
-  * For every topic, make sure you know which client method (CLI or GUI) is 
-the best (i.e., the quickest) for you.
+Horizon__, most of the tasks can be done there. However, keep in mind that you 
+may be forced to do some tasks on either the CLI or the GUI. Be aware of what 
+method you're using and ensure it matches the question requirements and pratice
+all contents for both CLI and GUI until you're comfortable with both.
   * __Some tasks can only be executed via CLI__, make sure you know which ones.
 Here is a non-exhaustive list of _"CLI-only"_ tasks:
     * Managing `domains`
     * Managing `endpoints`
-    * Downloading `glance` images
+    * Downloading, sharing `glance` images
     * Managing `swift` ACL rules and expiration dates 
     * Managing quotas (not all project quotas can be managed using Horizon, e.g., 
 service quotas)
   * __Check, check and check again__ to ensure your work has met the criteria, 
 even if you know for a fact that your command/steps were correct. 
-  * Based on my experience, the exam can be completed rather easily in half the 
-time you're allowed to use. In any case, I'd suggest you save at least 30min to 
-double check your work. 
+  * Based on my experience, the exam can be completed in half the time you're 
+allowed to use (3h at the time of this writing). In any case, I'd suggest you 
+save at least 30min to double check your work. 
   * For any tasks where you need to use floating IPs from within a project, 
 create the floating IPs before any other internal network-related tasks.
+  * If you're asked to create the provider/public network, make sure you do
+that before any other network-related tasks (floating IP tasks should follow 
+this one). To ensure this, you may want to start by skimming through the 
+entire exam right after it is launched. This won't take long and it may save 
+you time if you hit bugs for not creating the provider network first.  
 
 ## Exam contents
 
 See below the list of contents you need to master for the COA exam (at
 the time of this writing). 
 
-__NOTE__: Each section includes references pointing to the _latest_ Openstack
+```
+Each section includes references pointing to the _latest_ Openstack
 release at any time (at the time of this writing is Xena). This means that 
 if you want to check the documentation for a specific Openstack release
 other than the _latest_ one, most of the time you will only need to change
-the word _latest_ on the link to  
+the word _latest_ on the link. Example:
+
+https://docs.openstack.org/horizon/latest/user
+
+change the above link to:
+
+https://docs.openstack.org/horizon/ussuri/user
+```
+
 #### 1. [Identity management](../main/contents/identity-management/Identity-management.md)
  * [Manage and create domains, projects, users, and roles](../main/contents/identity-management/Manage-and-create-domains-projects-users-and-roles.md)
  * [Understand the differences between the member and admin roles](../main/contents/identity-management/Understand-the-differences-between-the-member-and-admin-roles.md)
@@ -164,7 +184,7 @@ the word _latest_ on the link to
  * [Manage volume quotas](../main/contents/block-storage/Manage-volume-quotas.md)
  * [Backup and restore volumes](https://docs.openstack.org/cinder/latest/admin/blockstorage-volume-backups.html)
  * [Manage volume snapshots (for example, create, list, recover)](../main/contents/block-storage/Manage-volume-snapshots.md)
-#### 5. Networking
+#### 5. [Networking](../main/contents/networking/Networking.md)
  * [Manage network resources (routers, networks, subnets)](../main/contents/networking/Manage-network-resources.md)
  * [Create external/public networks](../main/contents/networking/Manage-network-resources.md)
  * [Create project networks](../main/contents/networking/Manage-network-resources.md)
