@@ -34,7 +34,7 @@ reading the most recent one):
       * "Preparing for the Certified OpenStack Administrator Exam" - Matt Dorn
     
       If you're already familiar with Openstack, any of the above books plus
-      hands-on practice on test labs (to work on task exeution speed) may be 
+      hands-on practice on test labs (to work on task execution speed) may be 
       even enough to tackle the exam (without going through the Udemy course).
 
     * Review [Openstack docs](https://docs.openstack.org/) if you feel that 
@@ -144,7 +144,6 @@ you time if you hit bugs for not creating the provider network first.
 See below the list of contents you need to master for the COA exam (at
 the time of this writing). 
 
-```
 Each section includes references pointing to the _latest_ Openstack
 release at any time (at the time of this writing is Xena). This means that 
 if you want to check the documentation for a specific Openstack release
@@ -156,7 +155,7 @@ https://docs.openstack.org/horizon/latest/user
 change the above link to:
 
 https://docs.openstack.org/horizon/ussuri/user
-```
+
 
 #### 1. [Identity management](../main/contents/identity-management/Identity-management.md)
  * [Manage and create domains, projects, users, and roles](../main/contents/identity-management/Manage-and-create-domains-projects-users-and-roles.md)
