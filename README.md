@@ -64,10 +64,13 @@ knowledge you'll need to master for the exam.
     which can be used to deploy a fully-functional
     [Openstack cloud in a single host](https://docs.openstack.org/devstack/latest/guides/single-machine.html). 
 
+    A (perhaps) simpler method to get a single-node lab up and running can be
+    found in [this tutorial about Sunbeam](https://microstack.run/docs/single-node-guided). 
+
     Other useful resources to practice are: 
     * [OpenStack Training Labs](https://docs.openstack.org/training_labs/).
     
-    Overall, I would suggest setting up a Devstack deployment and repeatedly
+    Overall, I would suggest setting up a single-node deployment and repeatedly
     going through the exercises included in the course and repo below:
 
       * [Preparing to Certified OpenStack Administrator Exam Course](https://www.udemy.com/course/preparing-to-certified-openstack-administrator-coa-exam/)
